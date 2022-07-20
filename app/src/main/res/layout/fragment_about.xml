@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:background="@drawable/gradient2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/joystick"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/joystick" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text1"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/agreement_signature"
+                    android:text="The Gaming World"
+                    android:textColor="@color/appContrast"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="@font/bubbleboddyneue_regular"
+                    android:lineSpacingExtra="11sp"
+                    android:text="PlaySure"
+                    android:textColor="@color/appcolor"
+                    android:textSize="45sp" />
+
+
+            </RelativeLayout>
+            <!--    contact-phone-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/contact_ph"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/lay1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:elevation="5dp"
+                android:translationZ="5dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/img"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/phone"
+                            android:backgroundTint="@color/appcolor" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/img"
+                        android:fontFamily="@font/bubbleboddyneue_regular"
+                        android:letterSpacing="-0.04"
+                        android:lineSpacingExtra="11sp"
+                        android:text="Phone"
+                        android:textColor="@color/appContrast"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/phonenum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/phone"
+                        android:layout_toEndOf="@+id/img"
+                        android:fontFamily="@font/georgia"
+                        android:lineSpacingExtra="11sp"
+                        android:text="+91 9164182142"
+                        android:textColor="@color/appContrast"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--   email-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/contact_ph"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="5dp"
+                android:translationZ="5dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/img2"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/mail"
+                            android:backgroundTint="@color/appcolor" />
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/img2"
+                        android:fontFamily="@font/bubbleboddyneue_regular"
+                        android:letterSpacing="-0.04"
+                        android:lineSpacingExtra="11sp"
+                        android:text="Email"
+                        android:textColor="@color/appContrast"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/mailaddr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mail"
+                        android:layout_toEndOf="@+id/img2"
+                        android:fontFamily="@font/georgia"
+                        android:lineSpacingExtra="11sp"
+                        android:text="hashtaghyper7@gmail.com"
+                        android:textColor="@color/appContrast"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tc_title"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/georgia"
+                    android:lineSpacingExtra="11sp"
+                    android:text="A Terms and Conditions agreement dictates the rules, restrictions, obligations, and responsibilities while playing your game.\n\n
+1) Standards of behavior if your game allows for users to interact with other users.\n
+2) Payment terms if you charge for the game,\n
+3) Liability disclaimers that may arise from playing your game\n
+4) Many other useful clauses"
+                    android:textColor="@color/appContrast"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tc_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bubbleboddyneue_regular"
+                    android:lineSpacingExtra="11sp"
+                    android:text="Terms and Condtions"
+                    android:textColor="@color/appcolor"
+                    android:textSize="13sp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

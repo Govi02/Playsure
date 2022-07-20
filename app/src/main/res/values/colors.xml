@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#304FFE</color>
+    <color name="purple_500">#1E70FF</color>
+    <color name="black">#FF000000</color>
+    <color name="appContrast">#000000</color>
+    <color name="appcolor2">#9C27B0</color>
+    <color name="appcolor">#2979FF</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".No_internet">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/noint"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:background="@drawable/nointernet"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/nointext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/noint"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/georgia"
+            android:letterSpacing="-0.04"
+            android:lineSpacingExtra="11sp"
+            android:text="Check Your internet connection!"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+
+
+        <TextView
+            android:id="@+id/nointext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/nointext"
+            android:fontFamily="@font/georgia"
+            android:letterSpacing="-0.04"
+            android:lineSpacingExtra="11sp"
+            android:text="Please Try Again"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/retry"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/nointext2"
+            android:text="Retry"
+            android:background="@drawable/retry_button"
+            android:shadowColor="@color/appcolor"
+            android:shadowDx="0"
+            android:shadowDy="8"
+            android:textAllCaps="true"
+            android:textColor="@color/appContrast"
+            android:fontFamily="@font/bubbleboddyneue_regular"
+            android:textSize="25sp"
+            android:gravity="center"
+             />
+
+
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
